@@ -1,0 +1,145 @@
+{
+  "version": 2,
+  "nextId": 289,
+  "settings": {
+    "clinic": {
+      "name": "Talisay City College Clinic",
+      "systemName": "TCC CLINIC — Student Health Record and Consultation Tracking System",
+      "address": "Talisay City College, Talisay City, Cebu",
+      "email": "tcclinic@tcc.edu.ph",
+      "phone": "(032) 494-1234",
+      "hours": [
+        {
+          "days": "Monday – Friday",
+          "time": "8:00 AM – 5:00 PM"
+        },
+        {
+          "days": "Saturday",
+          "time": "8:00 AM – 12:00 PM"
+        },
+        {
+          "days": "Sunday & Holidays",
+          "time": "Closed"
+        }
+      ]
+    },
+    "notifications": {
+      "appointmentUpdates": true,
+      "prescriptionIssued": true,
+      "newAnnouncements": true,
+      "followUpReminders": true
+    },
+    "security": {
+      "sessionHours": 8,
+      "idleMinutes": 30,
+      "maxLoginAttempts": 5,
+      "minPasswordLength": 8
+    },
+    "general": {
+      "maxAdvanceDays": 60,
+      "slotMinutes": 30,
+      "allowRegistration": true
+    },
+    "permissions": {
+      "staff": {
+        "manageStudents": true,
+        "manageConsultations": true,
+        "manageAppointments": true,
+        "managePrescriptions": true,
+        "manageAnnouncements": true,
+        "viewReports": true,
+        "deleteRecords": true
+      }
+    }
+  },
+  "users": [
+    {
+      "id": "u_admin1",
+      "role": "admin",
+      "name": "Clinic Administrator",
+      "studentId": "",
+      "email": "admin@tcc.edu.ph",
+      "passwordHash": "$2a$10$VeiJI942/ZPkqeQonTL73eg4SfL2WPmg8xhaqXR0o8p7YlQJ8.kDG",
+      "status": "active",
+      "photo": "",
+      "createdAt": "2026-10-17T03:08:24.583Z"
+    },
+    {
+      "id": "u_staff1",
+      "role": "staff",
+      "name": "Nurse Maria Santos",
+      "studentId": "",
+      "email": "nurse@tcc.edu.ph",
+      "passwordHash": "$2a$10$JO7/EJMakQElQew2tPgmoeN7DUkowKHX.xD1zBw9J2at34VG3/MeS",
+      "status": "active",
+      "photo": "",
+      "createdAt": "2026-10-17T03:08:24.583Z"
+    },
+    {
+      "id": "u_staff2",
+      "role": "staff",
+      "name": "Dr. Ramon Uy",
+      "studentId": "",
+      "email": "doctor@tcc.edu.ph",
+      "passwordHash": "$2a$10$s4V9EEgqXsW2/7yYW8SzmuY/9WLRKpHQQNDmbE2O9yRxeMdygyM1.",
+      "status": "active",
+      "photo": "",
+      "createdAt": "2026-10-17T03:08:24.583Z"
+    },
+    {
+      "id": "u_staff3",
+      "role": "staff",
+      "name": "Dave M. Cortes",
+      "studentId": "",
+      "email": "cortesdave6@gmail.com",
+      "passwordHash": "$2a$10$jFYF.UIyaoTWgNdfk6jc/uSpCIM0W.8tEegsB5anB9b4dVl1jenFm",
+      "status": "active",
+      "photo": "",
+      "createdAt": "2026-10-17T03:08:24.583Z"
+    },
+    {
+      "id": "u_287",
+      "role": "admin",
+      "name": "Talisay Admin",
+      "studentId": "",
+      "email": "admin@gmail.com",
+      "passwordHash": "$2a$10$Juk.S7VUOhFfBi72/BybKuWJVQBGAstc9KmTPJjMRef2wyYDsQSwK",
+      "status": "active",
+      "photo": "",
+      "createdAt": "2026-10-17T03:08:25.675Z"
+    }
+  ],
+  "students": [],
+  "healthRecords": [],
+  "medicalHistory": [],
+  "allergies": [],
+  "immunizations": [],
+  "vitalSigns": [],
+  "documents": [],
+  "consultations": [],
+  "appointments": [],
+  "prescriptions": [],
+  "medicines": [],
+  "alerts": [],
+  "announcements": [],
+  "notifications": [],
+  "activity": [
+    {
+      "id": "ac288",
+      "at": "2026-10-17T03:08:25.675Z",
+      "actor": "System",
+      "action": "Added user (CLI)",
+      "detail": "Talisay Admin (admin)"
+    },
+    {
+      "id": "ac286",
+      "at": "2026-10-17T03:08:25.598Z",
+      "actor": "System",
+      "action": "Database created",
+      "detail": "Blank database"
+    }
+  ],
+  "messages": [],
+  "sessions": [],
+  "resetTokens": []
+}
