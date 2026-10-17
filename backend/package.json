@@ -1,0 +1,27 @@
+{
+  "name": "tcc-clinic-backend",
+  "version": "1.1.0",
+  "description": "Simple backend for the TCC Clinic student health system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "reset-db": "node -e \"require('fs').rmSync('data/db.json',{force:true});require('./db').get();console.log('Database reset to blank (admin and staff logins only).')\"",
+    "demo-data": "node -e \"require('fs').rmSync('data/db.json',{force:true});process.env.DEMO_DATA='1';require('./db').get();console.log('Demo data loaded.')\"",
+    "seed:admin": "node scripts/create-user.js admin",
+    "seed:staff": "node scripts/create-user.js staff",
+    "remove-demo": "node scripts/remove-demo.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.6.1",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.3",
+    "nodemailer": "^10.1.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true
+}
